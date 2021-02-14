@@ -1,0 +1,332 @@
+02/14/2021 11:32:05 AM - INFO - automl_search.py: Generating pipelines to search over...
+02/14/2021 11:34:15 AM - INFO - automl_search.py: Generating pipelines to search over...
+02/14/2021 11:34:16 AM - DEBUG - automl_search.py: allowed_estimators set to ['Decision Tree Classifier', 'LightGBM Classifier', 'Extra Trees Classifier', 'Elastic Net Classifier', 'CatBoost Classifier', 'XGBoost Classifier', 'Random Forest Classifier', 'Logistic Regression Classifier']
+02/14/2021 11:34:16 AM - DEBUG - automl_search.py: allowed_pipelines set to ['Decision Tree Classifier w/ Imputer + Text Featurization Component', 'LightGBM Classifier w/ Imputer + Text Featurization Component', 'Extra Trees Classifier w/ Imputer + Text Featurization Component', 'Elastic Net Classifier w/ Imputer + Text Featurization Component + Standard Scaler', 'CatBoost Classifier w/ Imputer + Text Featurization Component', 'XGBoost Classifier w/ Imputer + Text Featurization Component', 'Random Forest Classifier w/ Imputer + Text Featurization Component', 'Logistic Regression Classifier w/ Imputer + Text Featurization Component + Standard Scaler']
+02/14/2021 11:34:16 AM - DEBUG - automl_search.py: allowed_model_families set to [ModelFamily.DECISION_TREE, ModelFamily.EXTRA_TREES, ModelFamily.XGBOOST, ModelFamily.CATBOOST, ModelFamily.LINEAR_MODEL, ModelFamily.LIGHTGBM, ModelFamily.RANDOM_FOREST]
+02/14/2021 11:34:16 AM - INFO - logger.py: *****************************
+02/14/2021 11:34:16 AM - INFO - logger.py: * Beginning pipeline search *
+02/14/2021 11:34:16 AM - INFO - logger.py: *****************************
+02/14/2021 11:34:16 AM - INFO - logger.py: 
+02/14/2021 11:34:16 AM - INFO - automl_search.py: Optimizing for Log Loss Binary. 
+02/14/2021 11:34:16 AM - INFO - automl_search.py: Lower score is better.
+
+02/14/2021 11:34:16 AM - INFO - automl_search.py: Searching up to 1 batches for a total of 9 pipelines. 
+02/14/2021 11:34:16 AM - INFO - automl_search.py: Allowed model families: decision_tree, extra_trees, xgboost, catboost, linear_model, lightgbm, random_forest
+
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: Evaluating pipeline Mode Baseline Binary Classification Pipeline
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: Pipeline parameters: {'Baseline Classifier': {'strategy': 'mode'}}
+02/14/2021 11:34:18 AM - INFO - logger.py: Batch 1: (1/9) Mode Baseline Binary Classification P... Elapsed:00:00
+02/14/2021 11:34:18 AM - INFO - automl_search.py: 	Starting cross validation
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 		Training and scoring on fold 0
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 0: starting training
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 0: finished training
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 0: Scoring trained pipeline
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 0: Log Loss Binary score: 9.798
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 		Training and scoring on fold 1
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 1: starting training
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 1: finished training
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 1: Scoring trained pipeline
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 1: Log Loss Binary score: 9.798
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 		Training and scoring on fold 2
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 2: starting training
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 2: finished training
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 2: Scoring trained pipeline
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 2: Log Loss Binary score: 9.798
+02/14/2021 11:34:18 AM - INFO - automl_search.py: 	Finished cross validation - mean Log Loss Binary: 9.798
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: Adding results for pipeline Mode Baseline Binary Classification Pipeline
+parameters {'Baseline Classifier': {'strategy': 'mode'}}
+evaluation_results {'cv_data': [{'all_objective_scores': OrderedDict([('Log Loss Binary', 9.798040873783433), ('MCC Binary', 0.0), ('AUC', 0.5), ('Precision', 0.0), ('F1', 0.0), ('Balanced Accuracy Binary', 0.5), ('Accuracy Binary', 0.7163176610035559), ('# Training', 10124), ('# Validation', 5062)]), 'score': 9.798040873783433, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 9.798040873783433), ('MCC Binary', 0.0), ('AUC', 0.5), ('Precision', 0.0), ('F1', 0.0), ('Balanced Accuracy Binary', 0.5), ('Accuracy Binary', 0.7163176610035559), ('# Training', 10124), ('# Validation', 5062)]), 'score': 9.798040873783433, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 9.798040873783433), ('MCC Binary', 0.0), ('AUC', 0.5), ('Precision', 0.0), ('F1', 0.0), ('Balanced Accuracy Binary', 0.5), ('Accuracy Binary', 0.7163176610035559), ('# Training', 10124), ('# Validation', 5062)]), 'score': 9.798040873783433, 'binary_classification_threshold': 0.5}], 'training_time': 0.3057138919830322, 'cv_scores': 0    9.798041
+1    9.798041
+2    9.798041
+dtype: float64, 'cv_score_mean': 9.798040873783433}
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: Adding results complete
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: Evaluating pipeline Logistic Regression Classifier w/ Imputer + Text Featurization Component + Standard Scaler
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: Pipeline parameters: {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'Logistic Regression Classifier': {'penalty': 'l2', 'C': 1.0, 'n_jobs': -1, 'multi_class': 'auto', 'solver': 'lbfgs'}}
+02/14/2021 11:34:18 AM - INFO - logger.py: Batch 1: (2/9) Logistic Regression Classifier w/ Imp... Elapsed:00:00
+02/14/2021 11:34:18 AM - INFO - automl_search.py: 	Starting cross validation
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 		Training and scoring on fold 0
+02/14/2021 11:34:18 AM - DEBUG - automl_search.py: 			Fold 0: starting training
+02/14/2021 11:34:33 AM - DEBUG - automl_search.py: 			Fold 0: finished training
+02/14/2021 11:34:33 AM - DEBUG - automl_search.py: 			Fold 0: Scoring trained pipeline
+02/14/2021 11:34:45 AM - DEBUG - automl_search.py: 			Fold 0: Log Loss Binary score: 0.508
+02/14/2021 11:34:45 AM - DEBUG - automl_search.py: 		Training and scoring on fold 1
+02/14/2021 11:34:45 AM - DEBUG - automl_search.py: 			Fold 1: starting training
+02/14/2021 11:34:59 AM - DEBUG - automl_search.py: 			Fold 1: finished training
+02/14/2021 11:34:59 AM - DEBUG - automl_search.py: 			Fold 1: Scoring trained pipeline
+02/14/2021 11:35:11 AM - DEBUG - automl_search.py: 			Fold 1: Log Loss Binary score: 0.515
+02/14/2021 11:35:11 AM - DEBUG - automl_search.py: 		Training and scoring on fold 2
+02/14/2021 11:35:11 AM - DEBUG - automl_search.py: 			Fold 2: starting training
+02/14/2021 11:35:26 AM - DEBUG - automl_search.py: 			Fold 2: finished training
+02/14/2021 11:35:26 AM - DEBUG - automl_search.py: 			Fold 2: Scoring trained pipeline
+02/14/2021 11:35:39 AM - DEBUG - automl_search.py: 			Fold 2: Log Loss Binary score: 0.523
+02/14/2021 11:35:39 AM - INFO - automl_search.py: 	Finished cross validation - mean Log Loss Binary: 0.516
+02/14/2021 11:35:39 AM - DEBUG - automl_search.py: Adding results for pipeline Logistic Regression Classifier w/ Imputer + Text Featurization Component + Standard Scaler
+parameters {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'Logistic Regression Classifier': {'penalty': 'l2', 'C': 1.0, 'n_jobs': -1, 'multi_class': 'auto', 'solver': 'lbfgs'}}
+evaluation_results {'cv_data': [{'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5083649180998433), ('MCC Binary', 0.3091491439882424), ('AUC', 0.7601018141955269), ('Precision', 0.5992736077481841), ('F1', 0.43766578249336874), ('Balanced Accuracy Binary', 0.6267111790888154), ('Accuracy Binary', 0.7487159225602529), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5083649180998433, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5150550899780997), ('MCC Binary', 0.29784914997356016), ('AUC', 0.7546462065214552), ('Precision', 0.5992268041237113), ('F1', 0.42043399638336343), ('Balanced Accuracy Binary', 0.619023356538279), ('Accuracy Binary', 0.7467404188067958), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5150550899780997, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5232736486078438), ('MCC Binary', 0.3136431800057951), ('AUC', 0.7453120222718312), ('Precision', 0.6071428571428571), ('F1', 0.43861209964412806), ('Balanced Accuracy Binary', 0.627669516199162), ('Accuracy Binary', 0.75069142631371), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5232736486078438, 'binary_classification_threshold': 0.5}], 'training_time': 80.89463806152344, 'cv_scores': 0    0.508365
+1    0.515055
+2    0.523274
+dtype: float64, 'cv_score_mean': 0.5155645522285955}
+02/14/2021 11:35:39 AM - DEBUG - automl_search.py: Adding results complete
+02/14/2021 11:35:39 AM - DEBUG - automl_search.py: Evaluating pipeline Random Forest Classifier w/ Imputer + Text Featurization Component
+02/14/2021 11:35:39 AM - DEBUG - automl_search.py: Pipeline parameters: {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'Random Forest Classifier': {'n_estimators': 100, 'max_depth': 6, 'n_jobs': -1}}
+02/14/2021 11:35:39 AM - INFO - logger.py: Batch 1: (3/9) Random Forest Classifier w/ Imputer +... Elapsed:01:21
+02/14/2021 11:35:39 AM - INFO - automl_search.py: 	Starting cross validation
+02/14/2021 11:35:39 AM - DEBUG - automl_search.py: 		Training and scoring on fold 0
+02/14/2021 11:35:39 AM - DEBUG - automl_search.py: 			Fold 0: starting training
+02/14/2021 11:35:53 AM - DEBUG - automl_search.py: 			Fold 0: finished training
+02/14/2021 11:35:53 AM - DEBUG - automl_search.py: 			Fold 0: Scoring trained pipeline
+02/14/2021 11:36:07 AM - DEBUG - automl_search.py: 			Fold 0: Log Loss Binary score: 0.495
+02/14/2021 11:36:07 AM - DEBUG - automl_search.py: 		Training and scoring on fold 1
+02/14/2021 11:36:07 AM - DEBUG - automl_search.py: 			Fold 1: starting training
+02/14/2021 11:36:21 AM - DEBUG - automl_search.py: 			Fold 1: finished training
+02/14/2021 11:36:21 AM - DEBUG - automl_search.py: 			Fold 1: Scoring trained pipeline
+02/14/2021 11:36:34 AM - DEBUG - automl_search.py: 			Fold 1: Log Loss Binary score: 0.496
+02/14/2021 11:36:34 AM - DEBUG - automl_search.py: 		Training and scoring on fold 2
+02/14/2021 11:36:34 AM - DEBUG - automl_search.py: 			Fold 2: starting training
+02/14/2021 11:36:48 AM - DEBUG - automl_search.py: 			Fold 2: finished training
+02/14/2021 11:36:48 AM - DEBUG - automl_search.py: 			Fold 2: Scoring trained pipeline
+02/14/2021 11:37:01 AM - DEBUG - automl_search.py: 			Fold 2: Log Loss Binary score: 0.503
+02/14/2021 11:37:01 AM - INFO - automl_search.py: 	Finished cross validation - mean Log Loss Binary: 0.498
+02/14/2021 11:37:01 AM - DEBUG - automl_search.py: Adding results for pipeline Random Forest Classifier w/ Imputer + Text Featurization Component
+parameters {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'Random Forest Classifier': {'n_estimators': 100, 'max_depth': 6, 'n_jobs': -1}}
+evaluation_results {'cv_data': [{'all_objective_scores': OrderedDict([('Log Loss Binary', 0.49544215283995563), ('MCC Binary', 0.3384515257719273), ('AUC', 0.7732456285231851), ('Precision', 0.6181192660550459), ('F1', 0.4670710571923743), ('Balanced Accuracy Binary', 0.6417557273605821), ('Accuracy Binary', 0.7570130383247728), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.49544215283995563, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.4960339191287089), ('MCC Binary', 0.3611912596912834), ('AUC', 0.7699249616281053), ('Precision', 0.6765498652291105), ('F1', 0.4609733700642792), ('Balanced Accuracy Binary', 0.6416967675423704), ('Accuracy Binary', 0.7680758593441328), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.4960339191287089, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5027424774588182), ('MCC Binary', 0.3451173070417169), ('AUC', 0.760290024690144), ('Precision', 0.6332138590203107), ('F1', 0.4663440387153542), ('Balanced Accuracy Binary', 0.6422072404961382), ('Accuracy Binary', 0.76037139470565), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5027424774588182, 'binary_classification_threshold': 0.5}], 'training_time': 81.3298659324646, 'cv_scores': 0    0.495442
+1    0.496034
+2    0.502742
+dtype: float64, 'cv_score_mean': 0.4980728498091609}
+02/14/2021 11:37:01 AM - DEBUG - automl_search.py: Adding results complete
+02/14/2021 11:37:01 AM - DEBUG - automl_search.py: Evaluating pipeline XGBoost Classifier w/ Imputer + Text Featurization Component
+02/14/2021 11:37:01 AM - DEBUG - automl_search.py: Pipeline parameters: {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'XGBoost Classifier': {'eta': 0.1, 'max_depth': 6, 'min_child_weight': 1, 'n_estimators': 100}}
+02/14/2021 11:37:01 AM - INFO - logger.py: Batch 1: (4/9) XGBoost Classifier w/ Imputer + Text ... Elapsed:02:42
+02/14/2021 11:37:01 AM - INFO - automl_search.py: 	Starting cross validation
+02/14/2021 11:37:01 AM - DEBUG - automl_search.py: 		Training and scoring on fold 0
+02/14/2021 11:37:01 AM - DEBUG - automl_search.py: 			Fold 0: starting training
+02/14/2021 11:37:14 AM - DEBUG - automl_search.py: 			Fold 0: finished training
+02/14/2021 11:37:14 AM - DEBUG - automl_search.py: 			Fold 0: Scoring trained pipeline
+02/14/2021 11:37:27 AM - DEBUG - automl_search.py: 			Fold 0: Log Loss Binary score: 0.504
+02/14/2021 11:37:27 AM - DEBUG - automl_search.py: 		Training and scoring on fold 1
+02/14/2021 11:37:27 AM - DEBUG - automl_search.py: 			Fold 1: starting training
+02/14/2021 11:37:42 AM - DEBUG - automl_search.py: 			Fold 1: finished training
+02/14/2021 11:37:42 AM - DEBUG - automl_search.py: 			Fold 1: Scoring trained pipeline
+02/14/2021 11:37:59 AM - DEBUG - automl_search.py: 			Fold 1: Log Loss Binary score: 0.500
+02/14/2021 11:37:59 AM - DEBUG - automl_search.py: 		Training and scoring on fold 2
+02/14/2021 11:37:59 AM - DEBUG - automl_search.py: 			Fold 2: starting training
+02/14/2021 11:38:13 AM - DEBUG - automl_search.py: 			Fold 2: finished training
+02/14/2021 11:38:13 AM - DEBUG - automl_search.py: 			Fold 2: Scoring trained pipeline
+02/14/2021 11:38:27 AM - DEBUG - automl_search.py: 			Fold 2: Log Loss Binary score: 0.508
+02/14/2021 11:38:27 AM - INFO - automl_search.py: 	Finished cross validation - mean Log Loss Binary: 0.504
+02/14/2021 11:38:27 AM - DEBUG - automl_search.py: Adding results for pipeline XGBoost Classifier w/ Imputer + Text Featurization Component
+parameters {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'XGBoost Classifier': {'eta': 0.1, 'max_depth': 6, 'min_child_weight': 1, 'n_estimators': 100}}
+evaluation_results {'cv_data': [{'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5038950817630257), ('MCC Binary', 0.364216608500216), ('AUC', 0.7642998684831157), ('Precision', 0.6252631578947369), ('F1', 0.4979044425817267), ('Balanced Accuracy Binary', 0.6577346063020556), ('Accuracy Binary', 0.7633346503358356), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5038950817630257, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.4998947657518586), ('MCC Binary', 0.38411207727678315), ('AUC', 0.7657642613621524), ('Precision', 0.6772228989037758), ('F1', 0.4926894107221976), ('Balanced Accuracy Binary', 0.6570516710787304), ('Accuracy Binary', 0.7738048202291584), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.4998947657518586, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5082667608619307), ('MCC Binary', 0.3561067986443537), ('AUC', 0.7591997481820402), ('Precision', 0.6288888888888889), ('F1', 0.4845890410958904), ('Balanced Accuracy Binary', 0.6510189485716744), ('Accuracy Binary', 0.7621493480837613), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5082667608619307, 'binary_classification_threshold': 0.5}], 'training_time': 85.89278221130371, 'cv_scores': 0    0.503895
+1    0.499895
+2    0.508267
+dtype: float64, 'cv_score_mean': 0.5040188694589384}
+02/14/2021 11:38:27 AM - DEBUG - automl_search.py: Adding results complete
+02/14/2021 11:38:27 AM - DEBUG - automl_search.py: Evaluating pipeline CatBoost Classifier w/ Imputer + Text Featurization Component
+02/14/2021 11:38:27 AM - DEBUG - automl_search.py: Pipeline parameters: {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'CatBoost Classifier': {'n_estimators': 10, 'eta': 0.03, 'max_depth': 6, 'bootstrap_type': None, 'silent': True, 'allow_writing_files': False}}
+02/14/2021 11:38:27 AM - INFO - logger.py: Batch 1: (5/9) CatBoost Classifier w/ Imputer + Text... Elapsed:04:08
+02/14/2021 11:38:27 AM - INFO - automl_search.py: 	Starting cross validation
+02/14/2021 11:38:27 AM - DEBUG - automl_search.py: 		Training and scoring on fold 0
+02/14/2021 11:38:27 AM - DEBUG - automl_search.py: 			Fold 0: starting training
+02/14/2021 11:38:40 AM - DEBUG - automl_search.py: 			Fold 0: finished training
+02/14/2021 11:38:40 AM - DEBUG - automl_search.py: 			Fold 0: Scoring trained pipeline
+02/14/2021 11:38:53 AM - DEBUG - automl_search.py: 			Fold 0: Log Loss Binary score: 0.621
+02/14/2021 11:38:53 AM - DEBUG - automl_search.py: 		Training and scoring on fold 1
+02/14/2021 11:38:53 AM - DEBUG - automl_search.py: 			Fold 1: starting training
+02/14/2021 11:39:06 AM - DEBUG - automl_search.py: 			Fold 1: finished training
+02/14/2021 11:39:06 AM - DEBUG - automl_search.py: 			Fold 1: Scoring trained pipeline
+02/14/2021 11:39:18 AM - DEBUG - automl_search.py: 			Fold 1: Log Loss Binary score: 0.619
+02/14/2021 11:39:18 AM - DEBUG - automl_search.py: 		Training and scoring on fold 2
+02/14/2021 11:39:18 AM - DEBUG - automl_search.py: 			Fold 2: starting training
+02/14/2021 11:39:31 AM - DEBUG - automl_search.py: 			Fold 2: finished training
+02/14/2021 11:39:31 AM - DEBUG - automl_search.py: 			Fold 2: Scoring trained pipeline
+02/14/2021 11:39:43 AM - DEBUG - automl_search.py: 			Fold 2: Log Loss Binary score: 0.621
+02/14/2021 11:39:43 AM - INFO - automl_search.py: 	Finished cross validation - mean Log Loss Binary: 0.620
+02/14/2021 11:39:43 AM - DEBUG - automl_search.py: Adding results for pipeline CatBoost Classifier w/ Imputer + Text Featurization Component
+parameters {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'CatBoost Classifier': {'n_estimators': 10, 'eta': 0.03, 'max_depth': 6, 'bootstrap_type': None, 'silent': True, 'allow_writing_files': False}}
+evaluation_results {'cv_data': [{'all_objective_scores': OrderedDict([('Log Loss Binary', 0.6209618374690453), ('MCC Binary', 0.33299532661630016), ('AUC', 0.7631189436551553), ('Precision', 0.6314465408805031), ('F1', 0.45002241147467503), ('Balanced Accuracy Binary', 0.6343884388054702), ('Accuracy Binary', 0.75760568945081), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.6209618374690453, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.6190004505369889), ('MCC Binary', 0.3475605566271715), ('AUC', 0.7645459825125562), ('Precision', 0.6824224519940916), ('F1', 0.43729294841457644), ('Balanced Accuracy Binary', 0.6312165158165954), ('Accuracy Binary', 0.7651126037139471), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.6190004505369889, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.6212392044142806), ('MCC Binary', 0.3169517342929457), ('AUC', 0.7502556205799341), ('Precision', 0.6273458445040214), ('F1', 0.42896425297891844), ('Balanced Accuracy Binary', 0.6246183936195874), ('Accuracy Binary', 0.7538522323192414), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.6212392044142806, 'binary_classification_threshold': 0.5}], 'training_time': 76.9365439414978, 'cv_scores': 0    0.620962
+1    0.619000
+2    0.621239
+dtype: float64, 'cv_score_mean': 0.6204004974734384}
+02/14/2021 11:39:43 AM - DEBUG - automl_search.py: Adding results complete
+02/14/2021 11:39:43 AM - DEBUG - automl_search.py: Evaluating pipeline Elastic Net Classifier w/ Imputer + Text Featurization Component + Standard Scaler
+02/14/2021 11:39:43 AM - DEBUG - automl_search.py: Pipeline parameters: {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'Elastic Net Classifier': {'alpha': 0.5, 'l1_ratio': 0.5, 'n_jobs': -1, 'max_iter': 1000, 'penalty': 'elasticnet', 'loss': 'log'}}
+02/14/2021 11:39:43 AM - INFO - logger.py: Batch 1: (6/9) Elastic Net Classifier w/ Imputer + T... Elapsed:05:25
+02/14/2021 11:39:43 AM - INFO - automl_search.py: 	Starting cross validation
+02/14/2021 11:39:44 AM - DEBUG - automl_search.py: 		Training and scoring on fold 0
+02/14/2021 11:39:44 AM - DEBUG - automl_search.py: 			Fold 0: starting training
+02/14/2021 11:39:56 AM - DEBUG - automl_search.py: 			Fold 0: finished training
+02/14/2021 11:39:56 AM - DEBUG - automl_search.py: 			Fold 0: Scoring trained pipeline
+02/14/2021 11:40:09 AM - DEBUG - automl_search.py: 			Fold 0: Log Loss Binary score: 0.596
+02/14/2021 11:40:09 AM - DEBUG - automl_search.py: 		Training and scoring on fold 1
+02/14/2021 11:40:09 AM - DEBUG - automl_search.py: 			Fold 1: starting training
+02/14/2021 11:40:21 AM - DEBUG - automl_search.py: 			Fold 1: finished training
+02/14/2021 11:40:21 AM - DEBUG - automl_search.py: 			Fold 1: Scoring trained pipeline
+02/14/2021 11:40:35 AM - DEBUG - automl_search.py: 			Fold 1: Log Loss Binary score: 0.596
+02/14/2021 11:40:35 AM - DEBUG - automl_search.py: 		Training and scoring on fold 2
+02/14/2021 11:40:35 AM - DEBUG - automl_search.py: 			Fold 2: starting training
+02/14/2021 11:40:49 AM - DEBUG - automl_search.py: 			Fold 2: finished training
+02/14/2021 11:40:49 AM - DEBUG - automl_search.py: 			Fold 2: Scoring trained pipeline
+02/14/2021 11:41:02 AM - DEBUG - automl_search.py: 			Fold 2: Log Loss Binary score: 0.596
+02/14/2021 11:41:02 AM - INFO - automl_search.py: 	Finished cross validation - mean Log Loss Binary: 0.596
+02/14/2021 11:41:02 AM - DEBUG - automl_search.py: Adding results for pipeline Elastic Net Classifier w/ Imputer + Text Featurization Component + Standard Scaler
+parameters {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'Elastic Net Classifier': {'alpha': 0.5, 'l1_ratio': 0.5, 'n_jobs': -1, 'max_iter': 1000, 'penalty': 'elasticnet', 'loss': 'log'}}
+evaluation_results {'cv_data': [{'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5964498750379347), ('MCC Binary', 0.0), ('AUC', 0.5), ('Precision', 0.0), ('F1', 0.0), ('Balanced Accuracy Binary', 0.5), ('Accuracy Binary', 0.7163176610035559), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5964498750379347, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5963992467440979), ('MCC Binary', 0.0), ('AUC', 0.5), ('Precision', 0.0), ('F1', 0.0), ('Balanced Accuracy Binary', 0.5), ('Accuracy Binary', 0.7163176610035559), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5963992467440979, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.59641167258511), ('MCC Binary', 0.0), ('AUC', 0.5), ('Precision', 0.0), ('F1', 0.0), ('Balanced Accuracy Binary', 0.5), ('Accuracy Binary', 0.7163176610035559), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.59641167258511, 'binary_classification_threshold': 0.5}], 'training_time': 78.97348618507385, 'cv_scores': 0    0.596450
+1    0.596399
+2    0.596412
+dtype: float64, 'cv_score_mean': 0.5964202647890476}
+02/14/2021 11:41:02 AM - DEBUG - automl_search.py: Adding results complete
+02/14/2021 11:41:03 AM - DEBUG - automl_search.py: Evaluating pipeline Extra Trees Classifier w/ Imputer + Text Featurization Component
+02/14/2021 11:41:03 AM - DEBUG - automl_search.py: Pipeline parameters: {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'Extra Trees Classifier': {'n_estimators': 100, 'max_features': 'auto', 'max_depth': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_jobs': -1}}
+02/14/2021 11:41:03 AM - INFO - logger.py: Batch 1: (7/9) Extra Trees Classifier w/ Imputer + T... Elapsed:06:44
+02/14/2021 11:41:03 AM - INFO - automl_search.py: 	Starting cross validation
+02/14/2021 11:41:03 AM - DEBUG - automl_search.py: 		Training and scoring on fold 0
+02/14/2021 11:41:03 AM - DEBUG - automl_search.py: 			Fold 0: starting training
+02/14/2021 11:41:16 AM - DEBUG - automl_search.py: 			Fold 0: finished training
+02/14/2021 11:41:16 AM - DEBUG - automl_search.py: 			Fold 0: Scoring trained pipeline
+02/14/2021 11:41:29 AM - DEBUG - automl_search.py: 			Fold 0: Log Loss Binary score: 0.519
+02/14/2021 11:41:29 AM - DEBUG - automl_search.py: 		Training and scoring on fold 1
+02/14/2021 11:41:29 AM - DEBUG - automl_search.py: 			Fold 1: starting training
+02/14/2021 11:41:42 AM - DEBUG - automl_search.py: 			Fold 1: finished training
+02/14/2021 11:41:42 AM - DEBUG - automl_search.py: 			Fold 1: Scoring trained pipeline
+02/14/2021 11:41:54 AM - DEBUG - automl_search.py: 			Fold 1: Log Loss Binary score: 0.523
+02/14/2021 11:41:54 AM - DEBUG - automl_search.py: 		Training and scoring on fold 2
+02/14/2021 11:41:54 AM - DEBUG - automl_search.py: 			Fold 2: starting training
+02/14/2021 11:42:08 AM - DEBUG - automl_search.py: 			Fold 2: finished training
+02/14/2021 11:42:08 AM - DEBUG - automl_search.py: 			Fold 2: Scoring trained pipeline
+02/14/2021 11:42:22 AM - DEBUG - automl_search.py: 			Fold 2: Log Loss Binary score: 0.524
+02/14/2021 11:42:22 AM - INFO - automl_search.py: 	Finished cross validation - mean Log Loss Binary: 0.522
+02/14/2021 11:42:22 AM - DEBUG - automl_search.py: Adding results for pipeline Extra Trees Classifier w/ Imputer + Text Featurization Component
+parameters {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'Extra Trees Classifier': {'n_estimators': 100, 'max_features': 'auto', 'max_depth': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_jobs': -1}}
+evaluation_results {'cv_data': [{'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5185696768595386), ('MCC Binary', 0.23187999738787252), ('AUC', 0.7715682505027908), ('Precision', 0.724907063197026), ('F1', 0.22873900293255134), ('Balanced Accuracy Binary', 0.5576928543004945), ('Accuracy Binary', 0.7402212564203872), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5185696768595386, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.522720667335839), ('MCC Binary', 0.21850633934020108), ('AUC', 0.7676850646906358), ('Precision', 0.7571428571428571), ('F1', 0.19319562575941676), ('Balanced Accuracy Binary', 0.548329574244815), ('Accuracy Binary', 0.7376531015408929), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.522720667335839, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5243783620980422), ('MCC Binary', 0.22819120246557192), ('AUC', 0.7571664986855994), ('Precision', 0.772093023255814), ('F1', 0.20109024833434283), ('Balanced Accuracy Binary', 0.5510426861401791), ('Accuracy Binary', 0.7394310549190043), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5243783620980422, 'binary_classification_threshold': 0.5}], 'training_time': 79.17907214164734, 'cv_scores': 0    0.518570
+1    0.522721
+2    0.524378
+dtype: float64, 'cv_score_mean': 0.5218895687644732}
+02/14/2021 11:42:22 AM - DEBUG - automl_search.py: Adding results complete
+02/14/2021 11:42:22 AM - DEBUG - automl_search.py: Evaluating pipeline LightGBM Classifier w/ Imputer + Text Featurization Component
+02/14/2021 11:42:22 AM - DEBUG - automl_search.py: Pipeline parameters: {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'LightGBM Classifier': {'boosting_type': 'gbdt', 'learning_rate': 0.1, 'n_estimators': 100, 'max_depth': 0, 'num_leaves': 31, 'min_child_samples': 20, 'n_jobs': -1, 'bagging_freq': 0, 'bagging_fraction': 0.9}}
+02/14/2021 11:42:22 AM - INFO - logger.py: Batch 1: (8/9) LightGBM Classifier w/ Imputer + Text... Elapsed:08:03
+02/14/2021 11:42:22 AM - INFO - automl_search.py: 	Starting cross validation
+02/14/2021 11:42:22 AM - DEBUG - automl_search.py: 		Training and scoring on fold 0
+02/14/2021 11:42:22 AM - DEBUG - automl_search.py: 			Fold 0: starting training
+02/14/2021 11:42:35 AM - DEBUG - automl_search.py: 			Fold 0: finished training
+02/14/2021 11:42:35 AM - DEBUG - automl_search.py: 			Fold 0: Scoring trained pipeline
+02/14/2021 11:42:47 AM - DEBUG - automl_search.py: 			Fold 0: Log Loss Binary score: 0.503
+02/14/2021 11:42:47 AM - DEBUG - automl_search.py: 		Training and scoring on fold 1
+02/14/2021 11:42:47 AM - DEBUG - automl_search.py: 			Fold 1: starting training
+02/14/2021 11:43:00 AM - DEBUG - automl_search.py: 			Fold 1: finished training
+02/14/2021 11:43:00 AM - DEBUG - automl_search.py: 			Fold 1: Scoring trained pipeline
+02/14/2021 11:43:11 AM - DEBUG - automl_search.py: 			Fold 1: Log Loss Binary score: 0.503
+02/14/2021 11:43:11 AM - DEBUG - automl_search.py: 		Training and scoring on fold 2
+02/14/2021 11:43:11 AM - DEBUG - automl_search.py: 			Fold 2: starting training
+02/14/2021 11:43:24 AM - DEBUG - automl_search.py: 			Fold 2: finished training
+02/14/2021 11:43:24 AM - DEBUG - automl_search.py: 			Fold 2: Scoring trained pipeline
+02/14/2021 11:43:38 AM - DEBUG - automl_search.py: 			Fold 2: Log Loss Binary score: 0.508
+02/14/2021 11:43:38 AM - INFO - automl_search.py: 	Finished cross validation - mean Log Loss Binary: 0.505
+02/14/2021 11:43:38 AM - DEBUG - automl_search.py: Adding results for pipeline LightGBM Classifier w/ Imputer + Text Featurization Component
+parameters {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'LightGBM Classifier': {'boosting_type': 'gbdt', 'learning_rate': 0.1, 'n_estimators': 100, 'max_depth': 0, 'num_leaves': 31, 'min_child_samples': 20, 'n_jobs': -1, 'bagging_freq': 0, 'bagging_fraction': 0.9}}
+evaluation_results {'cv_data': [{'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5034290268831929), ('MCC Binary', 0.3681493124296112), ('AUC', 0.7646315414669972), ('Precision', 0.6276150627615062), ('F1', 0.5016722408026757), ('Balanced Accuracy Binary', 0.6598237427923063), ('Accuracy Binary', 0.76451995258791), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5034290268831929, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5030301123790183), ('MCC Binary', 0.3900268571436056), ('AUC', 0.7632480983057983), ('Precision', 0.6736842105263158), ('F1', 0.5028371890004364), ('Balanced Accuracy Binary', 0.662084957449064), ('Accuracy Binary', 0.7749901224812327), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5030301123790183, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5080991125786072), ('MCC Binary', 0.3697249349297398), ('AUC', 0.761767669124414), ('Precision', 0.6408839779005525), ('F1', 0.4955147372917557), ('Balanced Accuracy Binary', 0.657134637337582), ('Accuracy Binary', 0.7666930067167128), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5080991125786072, 'binary_classification_threshold': 0.5}], 'training_time': 76.7538092136383, 'cv_scores': 0    0.503429
+1    0.503030
+2    0.508099
+dtype: float64, 'cv_score_mean': 0.5048527506136061}
+02/14/2021 11:43:38 AM - DEBUG - automl_search.py: Adding results complete
+02/14/2021 11:43:39 AM - DEBUG - automl_search.py: Evaluating pipeline Decision Tree Classifier w/ Imputer + Text Featurization Component
+02/14/2021 11:43:39 AM - DEBUG - automl_search.py: Pipeline parameters: {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'Decision Tree Classifier': {'criterion': 'gini', 'max_features': 'auto', 'max_depth': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0}}
+02/14/2021 11:43:39 AM - INFO - logger.py: Batch 1: (9/9) Decision Tree Classifier w/ Imputer +... Elapsed:09:20
+02/14/2021 11:43:39 AM - INFO - automl_search.py: 	Starting cross validation
+02/14/2021 11:43:39 AM - DEBUG - automl_search.py: 		Training and scoring on fold 0
+02/14/2021 11:43:39 AM - DEBUG - automl_search.py: 			Fold 0: starting training
+02/14/2021 11:43:53 AM - DEBUG - automl_search.py: 			Fold 0: finished training
+02/14/2021 11:43:53 AM - DEBUG - automl_search.py: 			Fold 0: Scoring trained pipeline
+02/14/2021 11:44:07 AM - DEBUG - automl_search.py: 			Fold 0: Log Loss Binary score: 0.596
+02/14/2021 11:44:07 AM - DEBUG - automl_search.py: 		Training and scoring on fold 1
+02/14/2021 11:44:07 AM - DEBUG - automl_search.py: 			Fold 1: starting training
+02/14/2021 11:44:21 AM - DEBUG - automl_search.py: 			Fold 1: finished training
+02/14/2021 11:44:21 AM - DEBUG - automl_search.py: 			Fold 1: Scoring trained pipeline
+02/14/2021 11:44:35 AM - DEBUG - automl_search.py: 			Fold 1: Log Loss Binary score: 0.572
+02/14/2021 11:44:35 AM - DEBUG - automl_search.py: 		Training and scoring on fold 2
+02/14/2021 11:44:35 AM - DEBUG - automl_search.py: 			Fold 2: starting training
+02/14/2021 11:44:47 AM - DEBUG - automl_search.py: 			Fold 2: finished training
+02/14/2021 11:44:47 AM - DEBUG - automl_search.py: 			Fold 2: Scoring trained pipeline
+02/14/2021 11:44:59 AM - DEBUG - automl_search.py: 			Fold 2: Log Loss Binary score: 0.601
+02/14/2021 11:44:59 AM - INFO - automl_search.py: 	Finished cross validation - mean Log Loss Binary: 0.590
+02/14/2021 11:44:59 AM - DEBUG - automl_search.py: Adding results for pipeline Decision Tree Classifier w/ Imputer + Text Featurization Component
+parameters {'Imputer': {'categorical_impute_strategy': 'most_frequent', 'numeric_impute_strategy': 'mean', 'categorical_fill_value': None, 'numeric_fill_value': None}, 'Text Featurization Component': {'text_columns': ['text']}, 'Decision Tree Classifier': {'criterion': 'gini', 'max_features': 'auto', 'max_depth': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0}}
+evaluation_results {'cv_data': [{'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5964269014430311), ('MCC Binary', 0.3127822290040865), ('AUC', 0.7424934740891764), ('Precision', 0.6002386634844868), ('F1', 0.4423922603342128), ('Balanced Accuracy Binary', 0.6289451224290062), ('Accuracy Binary', 0.7495061240616357), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5964269014430311, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.5720533167663611), ('MCC Binary', 0.3274824735135179), ('AUC', 0.7469088346774378), ('Precision', 0.6259445843828715), ('F1', 0.44573991031390137), ('Balanced Accuracy Binary', 0.6320959197501179), ('Accuracy Binary', 0.7558277360726985), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.5720533167663611, 'binary_classification_threshold': 0.5}, {'all_objective_scores': OrderedDict([('Log Loss Binary', 0.6013701829548272), ('MCC Binary', 0.3361623296008894), ('AUC', 0.7516952388122303), ('Precision', 0.6131221719457014), ('F1', 0.4672413793103449), ('Balanced Accuracy Binary', 0.6415592586503848), ('Accuracy Binary', 0.7558277360726985), ('# Training', 10124), ('# Validation', 5062)]), 'score': 0.6013701829548272, 'binary_classification_threshold': 0.5}], 'training_time': 80.6357889175415, 'cv_scores': 0    0.596427
+1    0.572053
+2    0.601370
+dtype: float64, 'cv_score_mean': 0.5899501337214065}
+02/14/2021 11:44:59 AM - DEBUG - automl_search.py: Adding results complete
+02/14/2021 11:44:59 AM - INFO - automl_search.py: 
+Search finished after 10:41            
+02/14/2021 11:45:20 AM - INFO - automl_search.py: Best pipeline: Random Forest Classifier w/ Imputer + Text Featurization Component
+02/14/2021 11:45:20 AM - INFO - automl_search.py: Best pipeline Log Loss Binary: 0.498073
+02/14/2021 11:47:33 AM - INFO - logger.py: **********************************************************************
+02/14/2021 11:47:33 AM - INFO - logger.py: * Random Forest Classifier w/ Imputer + Text Featurization Component *
+02/14/2021 11:47:33 AM - INFO - logger.py: **********************************************************************
+02/14/2021 11:47:33 AM - INFO - logger.py: 
+02/14/2021 11:47:33 AM - INFO - pipeline_base.py: Problem Type: binary
+02/14/2021 11:47:33 AM - INFO - pipeline_base.py: Model Family: Random Forest
+02/14/2021 11:47:33 AM - INFO - logger.py: 
+02/14/2021 11:47:33 AM - INFO - logger.py: Pipeline Steps
+02/14/2021 11:47:33 AM - INFO - logger.py: ==============
+02/14/2021 11:47:33 AM - INFO - pipeline_base.py: 1. Imputer
+02/14/2021 11:47:33 AM - INFO - component_base.py: 	 * categorical_impute_strategy : most_frequent
+02/14/2021 11:47:33 AM - INFO - component_base.py: 	 * numeric_impute_strategy : mean
+02/14/2021 11:47:33 AM - INFO - component_base.py: 	 * categorical_fill_value : None
+02/14/2021 11:47:33 AM - INFO - component_base.py: 	 * numeric_fill_value : None
+02/14/2021 11:47:33 AM - INFO - pipeline_base.py: 2. Text Featurization Component
+02/14/2021 11:47:33 AM - INFO - component_base.py: 	 * text_columns : ['text']
+02/14/2021 11:47:33 AM - INFO - pipeline_base.py: 3. Random Forest Classifier
+02/14/2021 11:47:33 AM - INFO - component_base.py: 	 * n_estimators : 100
+02/14/2021 11:47:33 AM - INFO - component_base.py: 	 * max_depth : 6
+02/14/2021 11:47:33 AM - INFO - component_base.py: 	 * n_jobs : -1
+02/14/2021 11:47:33 AM - INFO - logger.py: 
+02/14/2021 11:47:33 AM - INFO - logger.py: Training
+02/14/2021 11:47:33 AM - INFO - logger.py: ========
+02/14/2021 11:47:33 AM - INFO - automl_search.py: Training for binary problems.
+02/14/2021 11:47:33 AM - INFO - automl_search.py: Total training time (including CV): 81.3 seconds
+02/14/2021 11:47:33 AM - INFO - logger.py: 
+02/14/2021 11:47:33 AM - INFO - logger.py: Cross Validation
+02/14/2021 11:47:33 AM - INFO - logger.py: ----------------
+02/14/2021 11:47:33 AM - INFO - automl_search.py:              Log Loss Binary  MCC Binary   AUC  Precision    F1  Balanced Accuracy Binary  Accuracy Binary # Training # Validation
+0                      0.495       0.338 0.773      0.618 0.467                     0.642            0.757  10124.000     5062.000
+1                      0.496       0.361 0.770      0.677 0.461                     0.642            0.768  10124.000     5062.000
+2                      0.503       0.345 0.760      0.633 0.466                     0.642            0.760  10124.000     5062.000
+mean                   0.498       0.348 0.768      0.643 0.465                     0.642            0.762          -            -
+std                    0.004       0.012 0.007      0.030 0.003                     0.000            0.006          -            -
+coef of var            0.008       0.034 0.009      0.047 0.007                     0.000            0.007          -            -
+02/14/2021 11:47:38 AM - INFO - logger.py: **********************************************************************
+02/14/2021 11:47:38 AM - INFO - logger.py: * Random Forest Classifier w/ Imputer + Text Featurization Component *
+02/14/2021 11:47:38 AM - INFO - logger.py: **********************************************************************
+02/14/2021 11:47:38 AM - INFO - logger.py: 
+02/14/2021 11:47:38 AM - INFO - pipeline_base.py: Problem Type: binary
+02/14/2021 11:47:38 AM - INFO - pipeline_base.py: Model Family: Random Forest
+02/14/2021 11:47:38 AM - INFO - logger.py: 
+02/14/2021 11:47:38 AM - INFO - logger.py: Pipeline Steps
+02/14/2021 11:47:38 AM - INFO - logger.py: ==============
+02/14/2021 11:47:38 AM - INFO - pipeline_base.py: 1. Imputer
+02/14/2021 11:47:38 AM - INFO - component_base.py: 	 * categorical_impute_strategy : most_frequent
+02/14/2021 11:47:38 AM - INFO - component_base.py: 	 * numeric_impute_strategy : mean
+02/14/2021 11:47:38 AM - INFO - component_base.py: 	 * categorical_fill_value : None
+02/14/2021 11:47:38 AM - INFO - component_base.py: 	 * numeric_fill_value : None
+02/14/2021 11:47:38 AM - INFO - pipeline_base.py: 2. Text Featurization Component
+02/14/2021 11:47:38 AM - INFO - component_base.py: 	 * text_columns : ['text']
+02/14/2021 11:47:38 AM - INFO - pipeline_base.py: 3. Random Forest Classifier
+02/14/2021 11:47:38 AM - INFO - component_base.py: 	 * n_estimators : 100
+02/14/2021 11:47:38 AM - INFO - component_base.py: 	 * max_depth : 6
+02/14/2021 11:47:38 AM - INFO - component_base.py: 	 * n_jobs : -1
+02/14/2021 11:47:38 AM - INFO - logger.py: 
+02/14/2021 11:47:38 AM - INFO - logger.py: Training
+02/14/2021 11:47:38 AM - INFO - logger.py: ========
+02/14/2021 11:47:38 AM - INFO - automl_search.py: Training for binary problems.
+02/14/2021 11:47:38 AM - INFO - automl_search.py: Total training time (including CV): 81.3 seconds
+02/14/2021 11:47:38 AM - INFO - logger.py: 
+02/14/2021 11:47:38 AM - INFO - logger.py: Cross Validation
+02/14/2021 11:47:38 AM - INFO - logger.py: ----------------
+02/14/2021 11:47:38 AM - INFO - automl_search.py:              Log Loss Binary  MCC Binary   AUC  Precision    F1  Balanced Accuracy Binary  Accuracy Binary # Training # Validation
+0                      0.495       0.338 0.773      0.618 0.467                     0.642            0.757  10124.000     5062.000
+1                      0.496       0.361 0.770      0.677 0.461                     0.642            0.768  10124.000     5062.000
+2                      0.503       0.345 0.760      0.633 0.466                     0.642            0.760  10124.000     5062.000
+mean                   0.498       0.348 0.768      0.643 0.465                     0.642            0.762          -            -
+std                    0.004       0.012 0.007      0.030 0.003                     0.000            0.006          -            -
+coef of var            0.008       0.034 0.009      0.047 0.007                     0.000            0.007          -            -
